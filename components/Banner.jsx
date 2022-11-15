@@ -1,6 +1,6 @@
 import { Flex, Image } from '@chakra-ui/react';
 import classes from './banner.module.css';
-export default function Banner() {
+export const Banner = () => {
   return (
     <Flex>
       <Image
@@ -10,4 +10,4 @@ export default function Banner() {
       ></Image>
     </Flex>
   );
-}
+};

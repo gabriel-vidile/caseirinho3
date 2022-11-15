@@ -2,9 +2,9 @@ import { urlFor } from '../utils/Client';
 import { Flex, Text, Image, Button } from '@chakra-ui/react';
 import Link from 'next/link';
 import { useStateContext } from '../context/StateContext';
-export default function Comida({
+export const Comida = ({
   comida: { _id, image, name, slug, price, details, isCardapio },
-}) {
+}) => {
   const { aoAdicionar } = useStateContext();
 
   let food = {

@@ -1,5 +1,5 @@
 import { Image } from '@chakra-ui/react';
-export default function Logo() {
+export const Logo = () => {
   return (
     <Image
       ml={5}

@@ -11,10 +11,10 @@ import { BiBook, BiFoodMenu } from 'react-icons/bi';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { Cart } from './Cart';
-import Logo from './Logo';
+import { Logo } from './Logo';
 import { useStateContext } from '../context/StateContext';
 
-export default function Navbar() {
+export const Navbar = () => {
   const { isOpen, onOpen, onClose } = useDisclosure();
   const { mostrarCarrinho, setMostrarCarrinho, quantidadeDeItensTotal } =
     useStateContext();
@@ -96,4 +96,4 @@ export default function Navbar() {
       ) : null}
     </nav>
   );
-}
+};

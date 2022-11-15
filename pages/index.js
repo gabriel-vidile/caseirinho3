@@ -1,8 +1,8 @@
 import Head from 'next/head';
 import { client } from '../utils/Client';
 import { Flex, Heading } from '@chakra-ui/react';
-import Comida from '../components/Comida';
-import Banner from '../components/Banner';
+import { Comida } from '../components/Comida';
+import { Banner } from '../components/Banner';
 
 export default function Home({ comidas }) {
   return (
