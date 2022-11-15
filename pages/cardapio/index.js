@@ -1,5 +1,5 @@
 import { Flex, Heading } from '@chakra-ui/react';
-import Comida from '../../components/comida';
+import Comida from '../../components/Comida';
 import { client } from '../../utils/Client';
 
 export default function Cardapio({ foods }) {

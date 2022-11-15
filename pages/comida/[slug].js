@@ -1,5 +1,5 @@
 import { Flex, Heading, Text } from '@chakra-ui/react';
-import Comida from '../../components/comida';
+import Comida from '../../components/Comida';
 import { client } from '../../utils/Client';
 export default function ComidaDetalhes({ food }) {
   const { image, name, details, price, acompanhamentos } = food;
