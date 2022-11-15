@@ -10,7 +10,7 @@ export default function ComidaDetalhes({ food }) {
       alignItems={['center', 'flex-start']}
       justifyContent="center"
     >
-      <Comida comida={food} />
+      <Comida key={name} comida={food} />
       <Flex flexDir="column" mt={5} padding={5}>
         <Heading>Detalhes</Heading>
         <Text>{details}</Text>

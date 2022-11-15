@@ -19,7 +19,7 @@ export default function Comida({
 
   if (isCardapio) {
     return (
-      <Flex key={name} flexDir="column" alignItems="center" key={name}>
+      <Flex flexDir="column" alignItems="center" key={name}>
         <Link href={`/comida/${slug.current}`}>
           <Flex flexDir="column" mt={5} ml={['0.5', '3']}>
             <Image
