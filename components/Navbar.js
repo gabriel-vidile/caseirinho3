@@ -11,7 +11,7 @@ import { BiBook, BiFoodMenu } from 'react-icons/bi';
 import { AiOutlineShoppingCart } from 'react-icons/ai';
 import { HamburgerIcon, CloseIcon } from '@chakra-ui/icons';
 import { Cart } from './Cart';
-import Logo from './logo';
+import Logo from './Logo';
 import { useStateContext } from '../context/StateContext';
 
 export default function Navbar() {
