@@ -1,6 +1,6 @@
 import React, {useRef, useState}from "react";
 import Link from "next/link";
-import { Button, Flex, Heading, Input, Modal, ModalBody, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Select, Stack, Text, useDisclosure } from "@chakra-ui/react";
+import { Button, Flex, Heading, Input, Modal, ModalBody,Image, ModalCloseButton, ModalContent, ModalFooter, ModalHeader, ModalOverlay, Select, Stack, Text, useDisclosure } from "@chakra-ui/react";
 import {AiOutlineMinus, AiOutlinePlus, AiOutlineLeft,AiOutlineFire} from 'react-icons/ai'
 import {TiDeleteOutline} from 'react-icons/ti'
 import { useStateContext } from "../context/StateContext";
@@ -93,7 +93,7 @@ export const Cart = () =>{
                 <Flex display='flex' padding={5} flexDir="column">
                     {itensDoCarrinho.length>=1 && itensDoCarrinho.map((item, index)=>(
                         <Flex alignItems='center' flexDir='row' key={index} >
-                            <img className={classes.img} src={urlFor(item?.image)}/>
+                            <Image className={classes.img} alt={item.nome} src={urlFor(item?.image)}/>
                             <Flex padding={2}>
                                 <Flex flexDir='column'>
                                     <Heading as="h5" color="blackAlpha.700" fontSize={20}>{item.nome}</Heading>

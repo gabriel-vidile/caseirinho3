@@ -1,9 +1,8 @@
 import Head from 'next/head';
-import Banner from '../components/banner';
-import Navbar from '../components/navbar';
 import { client } from '../utils/Client';
-import { Flex, Text, Heading, Image } from '@chakra-ui/react';
+import { Flex, Heading } from '@chakra-ui/react';
 import Comida from '../components/comida';
+import Banner from '../components/banner';
 
 export default function Home({ comidas }) {
   return (

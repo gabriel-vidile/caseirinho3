@@ -27,6 +27,7 @@ export default function Comida({
               src={urlFor(image && image[0])}
               width={['150', '250']}
               height={['150', '250']}
+              alt={name}
             />
 
             <Text className="product-name">{name}</Text>

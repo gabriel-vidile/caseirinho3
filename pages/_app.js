@@ -4,6 +4,7 @@ import { StateContext } from '../context/StateContext';
 import { Toaster } from 'react-hot-toast';
 import { Footer } from '../components/Footer';
 import Navbar from '../components/navbar';
+
 function MyApp({ Component, pageProps }) {
   return (
     <StateContext>
