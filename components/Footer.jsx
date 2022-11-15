@@ -6,7 +6,7 @@ export const Footer = () =>{
     return(
     <footer>
         <Flex flexDir="column">
-          <Heading color='yellow.500' padding={6} alignSelf="center">
+          <Heading color='yellow.500'  fontWeight="semibold" padding={6} alignSelf="center">
             Nosso restaurante
           </Heading>
 

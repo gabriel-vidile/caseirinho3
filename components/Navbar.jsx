@@ -41,14 +41,14 @@ export const Navbar = () => {
             <Flex padding={5}>
               <BiBook />
               <Text ml={2} textDecoration="none" color="red.900">
-                Home
+                Página principal
               </Text>
             </Flex>
           </Link>
           <Link href="/cardapio" className={classes.nav}>
             <Flex padding={5}>
               <BiFoodMenu />
-              <Text ml={2}>Cardapio</Text>
+              <Text ml={2}>Cardápio</Text>
             </Flex>
           </Link>
         </Flex>
@@ -82,14 +82,14 @@ export const Navbar = () => {
             <Flex padding={5}>
               <BiBook />
               <Text ml={2} textDecoration="none" color="red.900">
-                Home
+                Página principal
               </Text>
             </Flex>
           </Link>
           <Link href="/cardapio" className={classes.nav}>
             <Flex padding={5}>
               <BiFoodMenu />
-              <Text ml={2}>Cardapio</Text>
+              <Text ml={2}>Cardápio</Text>
             </Flex>
           </Link>
         </Flex>

@@ -14,8 +14,10 @@ export default function Home({ comidas }) {
       </Head>
       <main>
         <Banner />
-        <Flex mt={3} color="yellow.500" justifyContent="center">
-          <Heading>Novidades do dia</Heading>
+        <Flex padding={3} justifyContent="center">
+          <Heading color="red.500" fontWeight="semibold">
+            Pratos em destaque
+          </Heading>
         </Flex>
         <Flex
           flexDir={['column', 'row']}

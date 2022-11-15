@@ -1,5 +1,5 @@
 import { urlFor } from '../utils/Client';
-import { Flex, Text, Image, Button } from '@chakra-ui/react';
+import { Flex, Text, Image, Button,Heading } from '@chakra-ui/react';
 import Link from 'next/link';
 import { useStateContext } from '../context/StateContext';
 export const Comida = ({
@@ -19,7 +19,7 @@ export const Comida = ({
 
   if (isCardapio) {
     return (
-      <Flex flexDir="column" alignItems="center" key={name}>
+      <Flex flexDir="column " padding={4} alignItems="center" key={name}>
         <Link href={`/comida/${slug.current}`}>
           <Flex flexDir="column" mt={5} ml={['0.5', '3']}>
             <Image
@@ -30,14 +30,19 @@ export const Comida = ({
               alt={name}
             />
 
-            <Text className="product-name">{name}</Text>
-            <Text className="product-price">Preço R${price}</Text>
+            <Flex flexDir='column' padding={3}>
+              <Text className="product-name">{name}</Text>
+              <Heading fontSize={24}  fontWeight="semibold" color="yellow.600" className="product-price">Preço R${price}</Heading>
+            </Flex>
           </Flex>
         </Link>
         <Button
+        mt={4}
+        padding={5}
           colorScheme="red"
+          color='gold'
           onClick={() => aoAdicionar(food)}
-          variant="outline"
+          variant="solid"
         >
           Adicionar ao carrinho
         </Button>

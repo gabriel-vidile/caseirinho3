@@ -9,7 +9,15 @@ function MyApp({ Component, pageProps }) {
   return (
     <StateContext>
       <ChakraProvider>
-        <Toaster />
+        <Toaster
+          toastOptions={{
+            duration: 2000,
+            style: {
+              background: '#D10000',
+              color: '#FFDE2E',
+            },
+          }}
+        />
         <Navbar />
         <Component {...pageProps} />;
         <Footer />

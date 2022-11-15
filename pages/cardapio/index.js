@@ -4,8 +4,8 @@ import { client } from '../../utils/Client';
 
 export default function Cardapio({ foods }) {
   return (
-    <Flex flexDir="column" padding={5}>
-      <Heading as="h2" color="yellow.600">
+    <Flex flexDir="column" justifyContent="center" padding={10}>
+      <Heading as="h2" color="yellow.500" padding={5} fontWeight="semibold">
         Cardápio do dia
       </Heading>
       <Flex

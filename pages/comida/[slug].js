@@ -12,7 +12,7 @@ export default function ComidaDetalhes({ food }) {
     >
       <Comida key={name} comida={food} />
       <Flex flexDir="column" mt={5} padding={5}>
-        <Heading>Detalhes</Heading>
+        <Heading fontWeight="semibold">Detalhes</Heading>
         <Text>{details}</Text>
       </Flex>
     </Flex>
