@@ -7,7 +7,7 @@ export const Footer = () =>{
     <footer>
         <Flex flexDir="column">
           <Heading color='yellow.500' padding={6} alignSelf="center">
-            Nosso salão
+            Nosso restaurante
           </Heading>
 
           <Flex className={classes.nossaCasa}>

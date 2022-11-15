@@ -1,22 +1,19 @@
 import { Flex, Heading, Text, Image } from '@chakra-ui/react';
+import Comida from '../../components/comida';
 import { client, urlFor } from '../../utils/Client';
-export default function ComidaDetalhes({ food, foods }) {
+export default function ComidaDetalhes({ food }) {
   const { image, name, details, price, acompanhamentos } = food;
 
   return (
-    <Flex flexDir="column" alignItems="center">
-      <Heading>{name}</Heading>
-      <Image src={urlFor(image && image[0])} />
-      <Flex flexDir="column">
+    <Flex
+      flexDir={['column', 'row']}
+      alignItems={['center', 'flex-start']}
+      justifyContent="center"
+    >
+      <Comida comida={food} />
+      <Flex flexDir="column" mt={5} padding={5}>
+        <Heading>Detalhes</Heading>
         <Text>{details}</Text>
-        <Flex>
-          {acompanhamentos.map((acompanhamento) => {
-            <Flex>
-              <Text>{acompanhamento}</Text>
-            </Flex>;
-          })}
-        </Flex>
-        <Text>{price}</Text>
       </Flex>
     </Flex>
   );
@@ -46,12 +43,10 @@ export const getStaticPaths = async () => {
 
 export const getStaticProps = async ({ params: { slug } }) => {
   const query = `*[_type == "food" && slug.current == '${slug}'][0]`;
-  const foodsQuery = '*[_type == "food"]';
 
   const food = await client.fetch(query);
-  const foods = await client.fetch(foodsQuery);
 
   return {
-    props: { foods, food },
+    props: { food },
   };
 };

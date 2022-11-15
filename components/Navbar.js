@@ -33,8 +33,9 @@ export default function Navbar() {
             onClick={isOpen ? onClose : onOpen}
           />
         </Flex>
-
-        <Logo />
+        <Link href="/">
+          <Logo />
+        </Link>
         <Flex display={['none', 'flex']}>
           <Link href="/" className={classes.nav}>
             <Flex padding={5}>
@@ -52,14 +53,14 @@ export default function Navbar() {
           </Link>
         </Flex>
 
-        <Flex width={[30, 50]}>
+        <Flex width={[70]}>
           <Button
             type="button"
             variant="ghost"
             onClick={() => setMostrarCarrinho(true)}
             className={classes.cartIco}
           >
-            <AiOutlineShoppingCart fontSize={30} />
+            <AiOutlineShoppingCart color="red" fontSize={50} />
             <span className={classes.cartItemQty}>
               {quantidadeDeItensTotal}
             </span>
