@@ -1,4 +1,4 @@
-import { Flex, Image, Heading } from "@chakra-ui/react";
+import { Flex, Heading } from "@chakra-ui/react";
 import classes from './footer.module.css'
 import Iframe from 'react-iframe'
 
