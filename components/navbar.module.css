@@ -1,0 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap');
+
+.nav {
+  text-decoration: none;
+  color: #292727;
+  font-weight: 600;
+  font-size: 16px;
+  margin: 10px;
+  font-family: 'Cabin', sans-serif;
+}
+
+.nav:hover {
+  transform: scale(1.1, 1.1);
+}
+
+.cartIco {
+  font-size: 25px;
+  color: #292727;
+  cursor: pointer;
+  position: relative;
+  transition: transform 0.4s ease;
+  border: none;
+  background-color: transparent;
+}
+.cartIco:hover {
+  transform: scale(1.1, 1.1);
+}
+.cartItemQty {
+  position: absolute;
+  right: -8px;
+  font-size: 12px;
+  color: #eee;
+  background-color: #f02d34;
+  width: 18px;
+  height: 18px;
+  border-radius: 50%;
+  text-align: center;
+  font-weight: 600;
+}
