@@ -10,8 +10,9 @@ export default function Cardapio({ foods }) {
       </Heading>
       <Flex
         flexDir={['column', 'row']}
-        alignItems="flex-start"
-        justifyContent="flex-start"
+        flexWrap="wrap"
+        alignItems="center"
+        justifyContent="center"
       >
         {foods?.map((produto) => (
           <Comida key={produto.id} comida={produto} />

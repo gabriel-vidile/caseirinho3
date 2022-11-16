@@ -25,7 +25,7 @@ export default function Home({ comidas }) {
           justifyContent="center"
         >
           {comidas
-            ?.filter((item, idx) => idx < 3 && item.isCardapio === true)
+            ?.filter((item, idx) => idx < 3)
             .map((produto) => (
               <Comida key={produto._id} comida={produto} />
             ))}
